@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    letter-spacing: .1em;
+    color: #6b5b25;
+}
+body {
+    /* background-color: #858176; */
+}
+header {
+     text-align: center;  /*可继承 */
+    
+}
+.btn-div{
+    width: 480px;
+    text-align: center;
+    margin: 10px auto;
+    background: #eee;
+    padding: 10px;
+}
+#ctrl-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#ctrl-btn button {
+    background-color: #a58925;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    border: none;
+    border-radius: 4px;
+    color:#fff;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* 棋盘背景 */
+#cb {
+    width: 480px;
+    height: 480px;
+    margin: 16px auto;
+    background-image: url('img/chess.jpg');
+    background-size: 100% 100%;
+}
+
+#gt{
+    border-collapse: collapse;
+    transform:translate(6px,5px)
+}
+
+#gt td{
+    width: 31px;
+    height: 31px;
+}
+
+#gt td div {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+
+    transform: scale(.7);
+    -ms-transform: scale(.7); 	/* IE 9 */
+    -moz-transform: scale(.7); 	/* Firefox */
+    -webkit-transform: scale(.7); /* Safari 和 Chrome */
+    -o-transform: scale(.7); 	/* Opera */
+}
+
+
+[state=black]{
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 18px -18px 10px 10px #000 inset;
+}
+
+[state=white]{
+    background-color: black;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    box-shadow: 30px -30px 12px 12px #eee inset;
+}
+
+.current{
+    border: 1px solid red;
+}
+
+#tips {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 480px;
+    margin: 10px auto;
+    background-color: #eee;
+    padding: 10px;
+}
+ 
+#info {
+    color: #6b5b25;
+}

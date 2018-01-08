@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>五子棋</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <header>
+        <h1>欢乐五子棋</h1>
+        <div id="tips">
+            <span>我方：
+                <i id="me">
+                    <%=account%>
+                </i>
+            </span>
+            <span id="info">
+                点击<strong>开始匹配</strong>进行游戏
+            </span>
+            <span id="oppo">
+                对手：
+                <i></i> 
+            </span>
+        </div>
+        
+    </header>
+
+    <main>
+        <div id="cb">
+            <table id="gt"></table>
+        </div>
+    </main>  
+    <div class="btn-div">
+        <div id="ctrl-btn">
+            <button onclick="retractClick()">悔&emsp;棋</button>
+            <span id="round-label">当前回合：黑</span>
+            <button onclick="beginMatch()">开始匹配</button>
+        </div>
+    </div>  
+    
+    <script src="game.js"></script>
+</body>
+</html>
+
